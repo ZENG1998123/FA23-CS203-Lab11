@@ -1,4 +1,6 @@
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -12,7 +14,7 @@ public class Encrypter {
      * Default Constructor
      */
     public Encrypter() {
-        this.shift = 1;
+        this.shift = 4;
         this.encrypted = "";
     }
 
@@ -33,8 +35,18 @@ public class Encrypter {
      * @throws Exception if an error occurs while reading or writing the files
      */
     public void encrypt(String inputFilePath, String encryptedFilePath) throws Exception {
+        String content =readFile(inputFilePath);
+        char [] arr = content.toCharArray();
+        for(int i = 0;i<arr.length;i++){
+            if(Character.isAlphabetic(arr[i])){
+                arr[i]+=this.shift;
+            }
+        }
+
+        writeFile(new String(arr), encryptedFilePath);
         //TODO: Call the read method, encrypt the file contents, and then write to new file
     }
+
 
     /**
      * Decrypts the content of an encrypted file and writes the result to another file.
@@ -44,6 +56,17 @@ public class Encrypter {
      * @throws Exception if an error occurs while reading or writing the files
      */
     public void decrypt(String messageFilePath, String decryptedFilePath) throws Exception {
+        String content =readFile(messageFilePath);
+        char [] arr = content.toCharArray();
+        for(int i = 0;i<arr.length;i++){
+            arr[i]-=this.shift;
+            if(!Character.isAlphabetic(arr[i])){
+                arr[i]+=this.shift;
+            }
+        }
+
+        writeFile(new String(arr), decryptedFilePath);
+
         //TODO: Call the read method, decrypt the file contents, and then write to new file
     }
 
@@ -55,9 +78,9 @@ public class Encrypter {
      * @throws Exception if an error occurs while reading the file
      */
     private static String readFile(String filePath) throws Exception {
-        String message = "";
+
         //TODO: Read file from filePath
-        return message;
+        return Files.readString(Paths.get(filePath));
     }
 
     /**
@@ -66,7 +89,8 @@ public class Encrypter {
      * @param data     the data to be written to the file
      * @param filePath the path to the file where the data will be written
      */
-    private static void writeFile(String data, String filePath) {
+    private static void writeFile(String data, String filePath) throws IOException {
+        Files.write(Paths.get(filePath), data.getBytes());
         //TODO: Write to filePath
     }
 
