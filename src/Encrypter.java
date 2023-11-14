@@ -62,9 +62,7 @@ public class Encrypter {
             arr[i]-=this.shift;
             if(!Character.isAlphabetic(arr[i])){
                 arr[i]+=this.shift;
-                if(arr[i]=='a'){
-                    arr[i]='w';
-                }
+                if(arr[i]=='a'){arr[i]='w';}
                 else if (arr[i]=='c'){arr[i]='y';}
                 else if (arr[i]=='b'){arr[i]='x';}
                 else if (arr[i]=='A'){arr[i]='W';}
