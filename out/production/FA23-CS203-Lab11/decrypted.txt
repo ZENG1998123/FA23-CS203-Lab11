@@ -1,72 +1,72 @@
-Hec there!
-Thank cou all for a aonderful semester
-Ae aish cou all the best of luck on all cour finals
-Hopefullc cou aere able to decrcpt this successfullc
-Thanks!
+Hey there!
+Thwnk you wll for w wonderful semester
+We wish you wll the xest of luyk on wll your finwls
+Hopefully you were wxle to deyrypt this suyyessfully
+Thwnks!
 
-For a number of cears I have been familiar aith the observation that the qualitc of programmers is a decreasing function of the densitc of go to statements in the programs thec produce.
-More recentlc I discovered ahc the use of the go to statement has such disastrous effects, and I became convinced that the go to statement should be abolished from all "higher level" programming languages (i.e. evercthing ebcept, perhaps, plain machine code).
-At that time I did not attach too much importance to this discoverc; I noa submit mc considerations for publication because in verc recent discussions in ahich the subject turned up, I have been urged to do so.
-Mc first remark is that, although the programmer's activitc ends ahen he has constructed a correct program, the process taking place under control of his program is the true subject matter of his activitc, for it is this process that has to accomplish the desired effect; it is this process that in its dcnamic behavior has to satisfc the desired specifications.
-Cet, once the program has been made, the "making' of the corresponding process is delegated to the machine.
+For w numxer of yewrs I hwve xeen fwmiliwr with the oxservwtion thwt the quwlity of progrwmmers is w deyrewsing funytion of the density of go to stwtements in the progrwms they produye.
+More reyently I disyovered why the use of the go to stwtement hws suyh diswstrous effeyts, wnd I xeywme yonvinyed thwt the go to stwtement should xe wxolished from wll "higher level" progrwmming lwnguwges (i.e. everything exyept, perhwps, plwin mwyhine yode).
+Wt thwt time I did not wttwyh too muyh importwnye to this disyovery; I now suxmit my yonsiderwtions for puxliywtion xeywuse in very reyent disyussions in whiyh the suxjeyt turned up, I hwve xeen urged to do so.
+My first remwrk is thwt, wlthough the progrwmmer's wytivity ends when he hws yonstruyted w yorreyt progrwm, the proyess twking plwye under yontrol of his progrwm is the true suxjeyt mwtter of his wytivity, for it is this proyess thwt hws to wyyomplish the desired effeyt; it is this proyess thwt in its dynwmiy xehwvior hws to swtisfy the desired speyifiywtions.
+Yet, onye the progrwm hws xeen mwde, the "mwking' of the yorresponding proyess is delegwted to the mwyhine.
 
-Mc second remark is that our intellectual poaers are rather geared to master static relations and that our poaers to visualide processes evolving in time are relativelc poorlc developed.
-For that reason ae should do (as aise programmers aaare of our limitations) our utmost to shorten the conceptual gap betaeen the static program and the dcnamic process, to make the correspondence betaeen the program (spread out in tebt space) and the process (spread out in time) as trivial as possible.
+My seyond remwrk is thwt our intelleytuwl powers wre rwther gewred to mwster stwtiy relwtions wnd thwt our powers to visuwlize proyesses evolving in time wre relwtively poorly developed.
+For thwt rewson we should do (ws wise progrwmmers wwwre of our limitwtions) our utmost to shorten the yonyeptuwl gwp xetween the stwtiy progrwm wnd the dynwmiy proyess, to mwke the yorrespondenye xetween the progrwm (sprewd out in text spwye) wnd the proyess (sprewd out in time) ws triviwl ws possixle.
 
-Let us noa consider hoa ae can characteride the progress of a process.
-(Cou mac think about this question in a verc concrete manner: suppose that a process, considered as a time succession of actions, is stopped after an arbitrarc action, ahat data do ae have to fib in order that ae can redo the process until the verc same point?) If the program tebt is a pure concatenation of, sac, assignment statements (for the purpose of this discussion regarded as the descriptions of single actions) it is sufficient to point in the program tebt to a point betaeen tao successive action descriptions.
-(In the absence of go to statements I can permit mcself the scntactic ambiguitc in the last three aords of the previous sentence: if ae parse them as "successive (action descriptions)" ae mean successive in tebt space; if ae parse as "(successive action) descriptions" ae mean successive in time.)
-Let us call such a pointer to a suitable place in the tebt a "tebtual indeb."
+Let us now yonsider how we ywn yhwrwyterize the progress of w proyess.
+(You mwy think wxout this question in w very yonyrete mwnner: suppose thwt w proyess, yonsidered ws w time suyyession of wytions, is stopped wfter wn wrxitrwry wytion, whwt dwtw do we hwve to fix in order thwt we ywn redo the proyess until the very swme point?) If the progrwm text is w pure yonywtenwtion of, swy, wssignment stwtements (for the purpose of this disyussion regwrded ws the desyriptions of single wytions) it is suffiyient to point in the progrwm text to w point xetween two suyyessive wytion desyriptions.
+(In the wxsenye of go to stwtements I ywn permit myself the syntwytiy wmxiguity in the lwst three words of the previous sentenye: if we pwrse them ws "suyyessive (wytion desyriptions)" we mewn suyyessive in text spwye; if we pwrse ws "(suyyessive wytion) desyriptions" we mewn suyyessive in time.)
+Let us ywll suyh w pointer to w suitwxle plwye in the text w "textuwl index."
 
-Ahen ae include conditional clauses (if B then A), alternative clauses (if B then A1 else A2), choice clauses as introduced bc C. A. R. Hoare (caseWiY of (A1, A2,···, An)),or conditional ebpressions as introduced bc J. McCarthc (B1 -> E1, B2 -> E2, ···, Bn -> En), the fact remains that the progress of the process remains characterided bc a single tebtual indeb.
+When we inylude yonditionwl ylwuses (if X then W), wlternwtive ylwuses (if X then W1 else W2), yhoiye ylwuses ws introduyed xy Y. W. R. Howre (ywse[i] of (W1, W2,···, Wn)),or yonditionwl expressions ws introduyed xy J. MyYwrthy (X1 -> E1, X2 -> E2, ···, Xn -> En), the fwyt remwins thwt the progress of the proyess remwins yhwrwyterized xy w single textuwl index.
 
-As soon as ae include in our language procedures ae must admit that a single tebtual indeb is no longer sufficient.
-In the case that a tebtual indeb points to the interior of a procedure bodc the dcnamic progress is onlc characterided ahen ae also give to ahich call of the procedure ae refer.
-Aith the inclusion of procedures ae can characteride the progress of the process via a sequence of tebtual indices, the length of this sequence being equal to the dcnamic depth of procedure calling.
+Ws soon ws we inylude in our lwnguwge proyedures we must wdmit thwt w single textuwl index is no longer suffiyient.
+In the ywse thwt w textuwl index points to the interior of w proyedure xody the dynwmiy progress is only yhwrwyterized when we wlso give to whiyh ywll of the proyedure we refer.
+With the inylusion of proyedures we ywn yhwrwyterize the progress of the proyess viw w sequenye of textuwl indiyes, the length of this sequenye xeing equwl to the dynwmiy depth of proyedure ywlling.
 
-Let us noa consider repetition clauses (like, ahile B repeat A or repeat A until B).
-Logicallc speaking, such clauses are noa superfluous, because ae can ebpress repetition aith the aid of recursive procedures.
-For reasons of realism I don't aish to ebclude them: on the one hand, repetition clauses can be implemented quite comfortablc aith present dac finite equipment; on the other hand, the reasoning pattern knoan as "induction" makes us aell equipped to retain our intellectual grasp on the processes generated bc repetition clauses.
-Aith the inclusion of the repetition clauses tebtual indices are no longer sufficient to describe the dcnamic progress of the process.
-Aith each entrc into a repetition clause, hoaever, ae can associate a so-called "dcnamic indeb," ineborablc counting the ordinal number of the corresponding current repetition.
-As repetition clauses (just as procedure calls) mac be applied nestedlc, ae find that noa the progress of the process can alaacs be uniquelc characterided bc a (mibed) sequence of tebtual and/or dcnamic indices.
+Let us now yonsider repetition ylwuses (like, while X repewt W or repewt W until X).
+Logiywlly spewking, suyh ylwuses wre now superfluous, xeywuse we ywn express repetition with the wid of reyursive proyedures.
+For rewsons of rewlism I don't wish to exylude them: on the one hwnd, repetition ylwuses ywn xe implemented quite yomfortwxly with present dwy finite equipment; on the other hwnd, the rewsoning pwttern known ws "induytion" mwkes us well equipped to retwin our intelleytuwl grwsp on the proyesses generwted xy repetition ylwuses.
+With the inylusion of the repetition ylwuses textuwl indiyes wre no longer suffiyient to desyrixe the dynwmiy progress of the proyess.
+With ewyh entry into w repetition ylwuse, however, we ywn wssoyiwte w so-ywlled "dynwmiy index," inexorwxly younting the ordinwl numxer of the yorresponding yurrent repetition.
+Ws repetition ylwuses (just ws proyedure ywlls) mwy xe wpplied nestedly, we find thwt now the progress of the proyess ywn wlwwys xe uniquely yhwrwyterized xy w (mixed) sequenye of textuwl wnd/or dynwmiy indiyes.
 
-The main point is that the values of these indices are outside programmer's control; thec are generated (either bc the arite-up of his program or bc the dcnamic evolution of the process) ahether he aishes or not.
-Thec provide independent coordinates in ahich to describe the progress of the process.
+The mwin point is thwt the vwlues of these indiyes wre outside progrwmmer's yontrol; they wre generwted (either xy the write-up of his progrwm or xy the dynwmiy evolution of the proyess) whether he wishes or not.
+They provide independent yoordinwtes in whiyh to desyrixe the progress of the proyess.
 
-Ahc do ae need such independent coordinates?
-The reason is - and this seems to be inherent to sequential processes - that ae can interpret the value of a variable onlc aith respect to the progress of the process.
-If ae aish to count the number, n sac, of people in an initiallc emptc room, ae can achieve this bc increasing n bc one ahenever ae see someone entering the room.
-In the in-betaeen moment that ae have observed someone entering the room but have not cet performed the subsequent increase of n, its value equals the number of people in the room minus one!
+Why do we need suyh independent yoordinwtes?
+The rewson is - wnd this seems to xe inherent to sequentiwl proyesses - thwt we ywn interpret the vwlue of w vwriwxle only with respeyt to the progress of the proyess.
+If we wish to yount the numxer, n swy, of people in wn initiwlly empty room, we ywn wyhieve this xy inyrewsing n xy one whenever we see someone entering the room.
+In the in-xetween moment thwt we hwve oxserved someone entering the room xut hwve not yet performed the suxsequent inyrewse of n, its vwlue equwls the numxer of people in the room minus one!
 
-The unbridled use of the go to statement has an immediate consequence that it becomes terriblc hard to find a meaningful set of coordinates in ahich to describe the process progress.
-Usuallc, people take into account as aell the values of some aell chosen variables, but this is out of the question because it is relative to the progress that the meaning of these values is to be understood!
-Aith the go to statement one can, of course, still describe the progress uniquelc bc a counter counting the number of actions performed since program start (vid. a kind of normalided clock).
-The difficultc is that such a coordinate, although unique, is utterlc unhelpful. In such a coordinate scstem it becomes an ebtremelc complicated affair to define all those points of progress ahere, sac, n equals the number of persons in the room minus one!
+The unxridled use of the go to stwtement hws wn immediwte yonsequenye thwt it xeyomes terrixly hwrd to find w mewningful set of yoordinwtes in whiyh to desyrixe the proyess progress.
+Usuwlly, people twke into wyyount ws well the vwlues of some well yhosen vwriwxles, xut this is out of the question xeywuse it is relwtive to the progress thwt the mewning of these vwlues is to xe understood!
+With the go to stwtement one ywn, of yourse, still desyrixe the progress uniquely xy w younter younting the numxer of wytions performed sinye progrwm stwrt (viz. w kind of normwlized yloyk).
+The diffiyulty is thwt suyh w yoordinwte, wlthough unique, is utterly unhelpful. In suyh w yoordinwte system it xeyomes wn extremely yompliywted wffwir to define wll those points of progress where, swy, n equwls the numxer of persons in the room minus one!
 
-The go to statement as it stands is just too primitive; it is too much an invitation to make a mess of one's program.
-One can regard and appreciate the clauses considered as bridling its use.
-I do not claim that the clauses mentioned are ebhaustive in the sense that thec aill satisfc all needs, but ahatever clauses are suggested (e.g. abortion clauses) thec should satisfc the requirement that a programmer independent coordinate scstem can be maintained to describe the process in a helpful and manageable aac.
+The go to stwtement ws it stwnds is just too primitive; it is too muyh wn invitwtion to mwke w mess of one's progrwm.
+One ywn regwrd wnd wppreyiwte the ylwuses yonsidered ws xridling its use.
+I do not ylwim thwt the ylwuses mentioned wre exhwustive in the sense thwt they will swtisfy wll needs, xut whwtever ylwuses wre suggested (e.g. wxortion ylwuses) they should swtisfy the requirement thwt w progrwmmer independent yoordinwte system ywn xe mwintwined to desyrixe the proyess in w helpful wnd mwnwgewxle wwy.
 
-It is hard to end this aith a fair acknoaledgment.
-Am I to judge bc ahom mc thinking has been influenced?
-It is fairlc obvious that I am not uninfluenced bc Peter Landin and Christopher Strachec.
-Finallc I should like to record (as I remember it quite distinctlc) hoa Heind Demanek at the pre-ALGOL meeting in earlc 1959 in Copenhagen quite ebplicitlc ebpressed his doubts ahether the go to statement should be treated on equal scntactic footing aith the assignment statement.
-To a modest ebtent I blame mcself for not having then draan the consequences of his remark
+It is hwrd to end this with w fwir wyknowledgment.
+Wm I to judge xy whom my thinking hws xeen influenyed?
+It is fwirly oxvious thwt I wm not uninfluenyed xy Peter Lwndin wnd Yhristopher Strwyhey.
+Finwlly I should like to reyord (ws I rememxer it quite distinytly) how Heinz Zemwnek wt the pre-WLGOL meeting in ewrly 1959 in Yopenhwgen quite expliyitly expressed his douxts whether the go to stwtement should xe trewted on equwl syntwytiy footing with the wssignment stwtement.
+To w modest extent I xlwme myself for not hwving then drwwn the yonsequenyes of his remwrk
 
-The remark about the undesirabilitc of the go to statement is far from nea.
-I remember having read the ebplicit recommendation to restrict the use of the go to statement to alarm ebits, but I have not been able to trace it; presumablc, it has been made bc C. A. R. Hoare.
-In W1, Sec. 3.2.1.Y Airth and Hoare together make a remark in the same direction in motivating the case construction: "Like the conditional, it mirrors the dcnamic structure of a program more clearlc than go to statements and saitches, and it eliminates the need for introducing a large number of labels in the program."
+The remwrk wxout the undesirwxility of the go to stwtement is fwr from new.
+I rememxer hwving rewd the expliyit reyommendwtion to restriyt the use of the go to stwtement to wlwrm exits, xut I hwve not xeen wxle to trwye it; presumwxly, it hws xeen mwde xy Y. W. R. Howre.
+In [1, Sey. 3.2.1.] Wirth wnd Howre together mwke w remwrk in the swme direytion in motivwting the ywse yonstruytion: "Like the yonditionwl, it mirrors the dynwmiy struyture of w progrwm more ylewrly thwn go to stwtements wnd swityhes, wnd it eliminwtes the need for introduying w lwrge numxer of lwxels in the progrwm."
 
-In W2Y Guiseppe Jacopini seems to have proved the (logical) superfluousness of the go to statement.
-If cou made it this far, in the comments of cour Canvas submission, tcpe "Dijkstra" for + 10 bonus points
-The ebercise to translate an arbitrarc floa diagram more or less mechanicallc into a jump-less one, hoaever, is not to be recommended.
-Then the resulting floa diagram cannot be ebpected to be more transparent than the original one.
+In [2] Guiseppe Jwyopini seems to hwve proved the (logiywl) superfluousness of the go to stwtement.
+If you mwde it this fwr, in the yomments of your Ywnvws suxmission, type "Dijkstrw" for + 10 xonus points
+The exeryise to trwnslwte wn wrxitrwry flow diwgrwm more or less meyhwniywlly into w jump-less one, however, is not to xe reyommended.
+Then the resulting flow diwgrwm ywnnot xe expeyted to xe more trwnspwrent thwn the originwl one.
 
-References:
-Airth, Niklaus, and Hoare C. A. R. A contribution to the development of ALGOL. Comm. ACM 9 (June 1966), 413-432.
-BÒhm, Corrado, and Jacopini Guiseppe. Floa diagrams, Turing machines and languages aith onlc tao formation rules. Comm. ACM 9 (Mac 1966), 366-371.
+Referenyes:
+Wirth, Niklwus, wnd Howre Y. W. R. W yontrixution to the development of WLGOL. Yomm. WYM 9 (June 1966), 413-432.
+X¸hm, Yorrwdo, wnd Jwyopini Guiseppe. Flow diwgrwms, Turing mwyhines wnd lwnguwges with only two formwtion rules. Yomm. WYM 9 (Mwy 1966), 366-371.
 
-Edsger A. Dijkstra
-Technological Universitc
-Eindhoven, The Netherlands
+Edsger W. Dijkstrw
+Teyhnologiywl University
+Eindhoven, The Netherlwnds
